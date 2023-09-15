@@ -30,3 +30,8 @@ class Solution:
                 i = j-d
                 dp[j] = max(piles[j] - dp[j-1],  piles[i] - dp[j])
         return dp[n-1] > 0
+
+# solution 3:
+class Solution:
+    def stoneGame(self, piles: List[int]) -> bool:
+        return True
