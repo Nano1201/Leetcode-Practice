@@ -1,7 +1,7 @@
 # rec version
 # Time complexity: O(n)
 # Space complexity: O(n)
-"""
+
 class Solution:
     def bstToGst(self, root: TreeNode) -> TreeNode:
         
@@ -13,8 +13,6 @@ class Solution:
             return left
         rec(0, root)
         return root
-"""
-
 
 # stack version
 # Time complexity: O(n)
