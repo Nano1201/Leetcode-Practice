@@ -34,9 +34,8 @@ class Solution:
             curr.val += accu
             accu = curr.val
             if curr.left:
-                temp = curr.left
-                stack.append(temp)
-                temp = temp.right
+                stack.append(curr.left)
+                temp = curr.left.right
                 while temp:
                     stack.append(temp)
                     temp = temp.right
